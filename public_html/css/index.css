@@ -1,0 +1,68 @@
+/********************NAVIGATION****************************/
+a, a:hover, a:focus {
+	color: white;
+	text-decoration: none;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+	background-color: black;
+}
+#admin li.admin, #app li.appnav, #species li.speciesnav,#about li.about, #glossary li.glossary  {
+	/*background-color: rgba(255,255,255,.3);*/
+	background-color: darkolivegreen;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	background-color: darkolivegreen;
+}
+.form-group {
+	padding: 0;
+}
+#container {
+	background-color: #222222;
+}
+u {
+	border-bottom: 1px dotted #000;
+	text-decoration: none;
+}
+#home{
+	margin: 0;
+	padding: 0;
+}
+a.admin-link a:hover {
+	color: white;
+}
+/*********************BANNER*****************************/
+.index-header {
+	height: 400px;
+	background: url('../img/newHomeFungi.jpg') center center no-repeat scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	/*margin-top: -30px;*/
+}
+.tagline {
+	text-shadow: 20px 20px 20px black;
+	color: #fff;
+	padding-top: 180px;
+	margin-right: 170px;
+	float: right;
+}
+.img-center {
+	margin: 0 auto;
+}
+/**********************FOOTER****************************/
+footer {
+	margin: 50px 0;
+}
+
+a.admin-link {
+	float: right;
+	color: #222222;
+	display: inline;
+}
+
+a, a:hover {
+	color: white;
+}
+
+

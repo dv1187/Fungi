@@ -1,0 +1,226 @@
+/**********************Admin Navigation************************/
+.adminNavBar {
+    background-color: darkolivegreen;
+    color: white
+}
+a, a:hover, a:focus {
+    color: white;
+    text-decoration: none;
+}
+/*.nav > li > a:hover, .nav > li > a:focus {*/
+    /*background-color:black;*/
+/*}*/
+a.active {
+    background-color: black;
+}
+
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+    background-color: black;
+    border-color: black;
+}
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a {
+    background-color: darkolivegreen;
+}
+/***********************UPDATE SPECIES*********************************/
+.sub {
+    background-color: #556B2f;
+    border-color: #556B2f;
+}
+.sub:hover, .sub:focus {
+    background-color: #445525;
+    border-color: #445525;
+}
+.resetSpace {
+    margin-bottom: 15px;
+}
+
+/***********************ADMIN CSS 2017*********************************/
+.adminButton {
+    display: inline;
+    float: left;
+    background-color: #222222;
+    width: 45%;
+    height: 100px;
+    margin: 15px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    color: white;
+    font-size: 150%;
+}
+
+.adminDiv {
+    padding: 15px;
+    margin: auto;
+    min-height: 150px;
+    width: 100%;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px
+}
+/********************NAVIGATION****************************/
+a, a:hover, a:focus {
+	color: white;
+	text-decoration: none;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+	background-color:black;
+}
+#admin li.admin, #app li.appnav, #species li.speciesnav,#about li.about, #glossary li.glossary  {
+	/*background-color: rgba(255,255,255,.3);*/
+	background-color: darkolivegreen;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	background-color: darkolivegreen;
+}
+.form-group {
+	padding: 0;
+}
+u {
+	border-bottom: 1px dotted #000;
+	text-decoration: none;
+}
+/*********************BANNER*****************************/
+.index-header {
+	height: 400px;
+	background: url('../img/newHomeFungi.jpg') center center no-repeat scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	/*margin-top: -30px;*/
+}
+.tagline {
+	text-shadow: 20px 20px 20px black;
+	color: #fff;
+	padding-top: 180px;
+	margin-right: 170px;
+	float: right;
+}
+.img-center {
+	margin: 0 auto;
+}
+/**********************FOOTER****************************/
+footer {
+	margin: 50px 0;
+}
+
+a.admin-link {
+	float: right;
+	color: white;
+	display: inline;
+}
+
+a.admin-link:hover {
+	color: black;
+}
+
+body {
+	padding-top: 50px;
+}
+
+.thumbnail {
+	height: 45%;
+	width: 45%;
+}
+
+.showcase .hs{
+	width:auto;
+	margin:auto;
+	padding-bottom: 2%;
+	background-color: rgba(192,192,192,0.1);
+}
+
+
+.showcase {
+	/* Set it so we could calculate the offsetLeft */
+	height: 100%;
+	width: 100%;
+	/* Add scroll-bars */
+	overflow: auto;
+	float:left;
+	padding: 2px;
+	background-color: #d8d8d8;
+	align-content: center;
+}
+
+.result-page-header {
+	position: relative;
+	display: block;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin: 0px;
+	height: 300px;
+	width: 100%;
+	background-image: url("../img/0fungiBanner.jpg");
+	background-position: center;
+}
+
+#species-name {
+	position: absolute;
+	bottom: 10px;
+	font-weight: bold;
+	color: white;
+	text-shadow: 3px 3px 10px black;
+}
+
+.row {
+	padding-top: 3%;
+	font-size: 120%;
+	width: 100%;
+}
+
+.containerResult {
+	padding-left: 50px;
+	float: left;
+	width: 50%;
+}
+
+.imageCont {
+	width: 50%;
+	float: left;
+	font-weight: bolder;
+}
+
+#imageLink{
+	width: 90%;
+	height: 100%;
+}
+
+.hs {
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+
+.col-lg-7 {
+	width: 100%;
+}
+
+.scImage {
+	padding: 2px;
+}
+td{
+	padding: 3px;	
+}
+table{
+	width: 100%;
+}
+#addSynonyms{
+	white-space: pre-wrap;
+    display:block; /* change this from inline-block */
+        margin:0 auto; /* this will center  it */
+   	 position:relative;
+       outline:none;
+ 	width: 50%;
+	border: 50px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	
+}
+.space{
+	margin-bottom: 10px;
+}

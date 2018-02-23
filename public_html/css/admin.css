@@ -1,0 +1,87 @@
+/**********************Admin Navigation************************/
+.adminNavBar {
+    background-color: darkolivegreen;
+    color: white
+}
+a, a:hover, a:focus {
+    color: white;
+    text-decoration: none;
+}
+/*.nav > li > a:hover, .nav > li > a:focus {*/
+    /*background-color:black;*/
+/*}*/
+a.active {
+    background-color: black;
+}
+
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+    background-color: black;
+    border-color: black;
+}
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a {
+    background-color: darkolivegreen;
+}
+/***********************UPDATE SPECIES*********************************/
+.sub {
+    background-color: #556B2f;
+    border-color: #556B2f;
+}
+.sub:hover, .sub:focus {
+    background-color: #445525;
+    border-color: #445525;
+}
+.resetSpace {
+    margin-bottom: 15px;
+}
+
+/***********************ADMIN CSS 2017*********************************/
+.adminButton {
+    display: inline;
+    float: left;
+    background-color: #222222;
+    width: 45%;
+    height: 100px;
+    margin: 15px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    color: white;
+    font-size: 150%;
+}
+
+.adminDiv {
+    padding: 15px;
+    margin: auto;
+    min-height: 150px;
+    width: 100%;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+button{
+	padding: 15px;
+}
+
+.editbt {
+	margin-left: 50px;
+}
+
+.adminButtonLogout {
+    display: inline;
+    float: right;
+    background-color: #222222;
+    width: 15%;
+    height: 50px;
+    margin: 15px;
+    margin-top: 60px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    color: white;
+    font-size: 150%;
+}

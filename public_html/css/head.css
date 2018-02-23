@@ -1,0 +1,117 @@
+.userGuide{
+    position:absolute;
+    top:10px;
+    right: 50px;
+}
+
+.helpText{
+    display:none;
+    position: absolute;
+    right: 5%;
+    padding: 3%;
+    background: #E0E0E0;
+    /*background: rgba(204, 204, 204, 0.5);*/
+    border:1px solid black;
+}
+
+li{
+    display: inline;
+}
+
+#help {
+    display: none;
+    position: absolute;
+    top: 65%;
+    right: 4%;
+}
+
+#helpBtn {
+    height: 50px;
+    width: 55px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #222222;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: darkolivegreen;
+}
+
+/* The container <div> - needed to position the dropdown content */
+li.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #222222;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: darkolivegreen}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/*Makes it look nice*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222222;
+}
+#top{
+    padding: 0;
+}
+#top2 {
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: darkolivegreen;
+}
+.push {
+    float: right;
+}
+a.admin-link {
+    color: #222222;
+}
+a.admin-link a:hover {
+    color: white;
+}
+

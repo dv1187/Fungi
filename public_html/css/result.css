@@ -1,0 +1,94 @@
+.thumbnail {
+	height: 45%;
+	width: 45%;
+}
+
+.showcase .hs{
+	width:auto;
+	margin:auto;
+	padding-bottom: 2%;
+	background-color: rgba(192,192,192,0.1);
+}
+
+
+.showcase {
+	/* Set it so we could calculate the offsetLeft */
+	height: 100%;
+	width: 100%;
+	/* Add scroll-bars */
+	overflow: auto;
+	float:left;
+	padding: 2px;
+	background-color: #d8d8d8;
+	align-content: center;
+}
+
+.result-page-header {
+	position: relative;
+	display: block;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin: 0px;
+	height: 300px;
+	width: 100%;
+	background-image: url("../img/0fungiBanner.jpg");
+	background-position: center;
+}
+
+#species-name {
+	position: absolute;
+	bottom: 10px;
+	font-weight: bold;
+	color: white;
+	text-shadow: 3px 3px 10px black;
+}
+
+.row {
+	padding-top: 3%;
+	font-size: 120%;
+	width: 100%;
+}
+
+.containerResult {
+	padding-left: 50px;
+	float: left;
+	width: 50%;
+}
+
+.imageCont {
+	width: 50%;
+	float: left;
+	font-weight: bolder;
+}
+
+#imageLink{
+	width: 90%;
+	height: 100%;
+}
+
+.hs {
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+
+.col-lg-7 {
+	width: 100%;
+}
+
+.scImage {
+	padding: 2px;
+}
+
+.edit {
+	position: absolute;
+	bottom: 10px;
+	right: 20px;
+}
+
+.edit button {
+	background-color:olivedrab;
+	height: 50px;
+	width: 150px;
+	font-size: 20px;
+}

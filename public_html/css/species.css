@@ -1,0 +1,50 @@
+/************************SPECIES LIST****************************/
+#species-list {
+	font-size: 38pt;
+}
+
+a, a:hover, a:focus  {
+	color: white;
+}
+
+.button {
+	background-color: white;
+	border: none;
+	color: darkolivegreen;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+th {
+	width: 200px;
+}
+
+.button:hover {
+	background-color: darkolivegreen;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+tr.odd {
+	background-color: rgba(125, 255, 54, 0.15) !important;
+ }
+
+tr.odd td.sorting_1 {
+	background-color: rgba(113, 188, 4, 0.24) !important;
+}
+
+tr.even td.sorting_1 {
+	background-color: rgba(125, 255, 54, 0.15) !important;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Species</title>
+</head>
+<body>
+<div class="container">
+
+    <!--{include "adminNav.tpl"}-->
+    <!--{if isset($msg)}<h3 id="warning">{$msg}</h3>{/if}-->
+
+    <!--Add new species-->
+        <h3>New Species:</h3>
+
+        Scientific Name:
+        <input type="text" name="scientificName"
+               value="{$scientificName}"
+        class="form-control"><br>
+        Authority Name:
+        <input type="text" name="authorityName"
+               value="{$authorityName}"
+        class="form-control"><br>
+        Name Derivation:
+        <input type="text" class="form-control"
+               value="{$nameDerivation}"
+        name="nameDerivation"><br>
+        Synonyms:
+        <input type="text" class="synonyms"
+               value="{$synonyms}"
+        name="scientificName"><br>
+        Common Name(s):
+        <input type="text" class="form-control"
+               value="{$commonName}"
+        name="commonName"><br>
+        Phylum:
+        <input type="text" class="form-control"
+               value="{$phylum}"
+        name="phylum"><br>
+        Order:
+        <input type="text" class="form-control"
+               value="{$order}"
+        name="order"><br>
+        Family:
+        <input type="text" class="form-control"
+               value="{$family}"
+        name="family"><br>
+        Occurance on Wood Substrate:
+        <input type="text" class="form-control"
+               value="{$woodSubstrate}"
+        name="woodSubstrate"><br>
+        Dimensions:
+        <input type="text" class="form-control"
+               value="{$dimensions}"
+        name="dimensions"><br>
+        <!--- INSERT VARIABLE PORTION HERE ----->
+        Edibility:
+        <input type="text" class="form-control"
+               value="{$edibility}"
+               name="edibility"><br>
+        Comment:
+        <input type="text" class="form-control"
+               value="{$comments}"
+        name="comments"><br>
+        More information at:
+        <input type="text" class="form-control"
+           value="{$moreInfo}"
+           name="moreInfo"><br>
+
+
+        Shape Association:
+        <select name="shape" class="form-control">
+            <!--THIS CODE BENEATH IS SUPPOSED TO SCAN DB FOR SHAPES AND MAKE IT AS A DROP DOWN MENU-->
+            <!--{foreach from=$shapeArray key=key item=item}-->
+            <!--<option value="{$key}">{$item}</option>-->
+            <!--{/foreach}-->
+            <option value="cupAndSaucer">Cup & Saucer</option>
+            <option value="temp">Temporary</option>
+        </select><br>
+
+        <div class="cupAndSaucer">
+            <br>Fertile surface color:<br>
+            <input type="radio" name="fertileSurfaceColor" value="whitish"> Whitish<br>
+            <input type="radio" name="fertileSurfaceColor" value="concetricallyZoned"> Concetrically zoned with white and brown<br>
+            <input type="radio" name="fertileSurfaceColor" value="ashyGrey"> Ashy grey<br>
+            <input type="radio" name="fertileSurfaceColor" value="blackish"> Blackish<br>
+            <input type="radio" name="fertileSurfaceColor" value="paleBrownToTan"> Pale brown to tan to yellow-ish brown, reddish brown, or darker brown<br>
+            <input type="radio" name="fertileSurfaceColor" value="greenToBlue"> Green to blue-green<br>
+            <input type="radio" name="fertileSurfaceColor" value="purplish"> purplish<br>
+            <input type="radio" name="fertileSurfaceColor" value="yellow"> Yellow, orange-yellow to dull orange<br>
+            <input type="radio" name="fertileSurfaceColor" value="red"> Red, orange-red to bright orange<br>
+
+            <br>Conspicuous stalk present:<br>
+            <input type="radio" name="conspicuousStalk" value="yes"> Yes<br>
+            <input type="radio" name="conspicuousStalk" value="no"> No<br>
+
+            <br>Conspicuous hair present:<br>
+            <input type="radio" name="conspicuousHair" value="margin"> Margin of fertile surface fringed with dark brown or blackish hairs<br>
+            <input type="radio" name="conspicuousHair" value="stalk"> Stalk and outside of cup covered with white hairs<br>
+            <input type="radio" name="conspicuousHair" value="outerSurface"> Outer surface of cup covered with brownish hairs<br>
+
+            <br>Size of individual fruit bodies:<br>
+            <input type="radio" name="fruitBody" value="smaller"> Smaller than 1cm<br>
+            <input type="radio" name="fruitBody" value="larger"> larger than 1cm<br>
+
+            <br>Unusual Features:<br>
+            <input type="radio" name="unusual" value="two-tone"> Fruit body two-toned with tan to reddish brown fertile surface and blackish-brown outer surface<br>
+            <input type="radio" name="unusual" value="ear-shaped"> Fruit body ear-shaped to irregularly cup-shaped with portions of the fruit body irregularly wrinkled or with raised vein-like markings<br>
+        </div>
+
+        <!--Add Image:<br>-->
+        <!--{if isset($photoName)}-->
+        <!--<img class="pic glossarypic" src="img/{$photoName}">-->
+        <!--{/if}-->
+
+        <!--<div id="addingImages">-->
+            <!--<div class="uploadDiv">-->
+                <!--<input name="file[]" type="file" id="file"/>-->
+            <!--</div>-->
+            <!--Caption: <input type="text" class="form-control" name="caption[0]"/><br>-->
+        <!--</div>-->
+        <!--<input type="button" id="addDiv" class="btn btn-default form-control sub resetSpace" value="Add More Photo"/>-->
+
+        <!--<input type="submit" class="btn btn-default btn-md add form-control" value="Add" name="addSpecies">-->
+
+    </form>
+    <script>
+        var count = 0;
+    </script>
+
+    <!--- JQuery function to upload more images--->
+    <script>
+
+        $("#addDiv").click(function() {
+            count = count + 1;
+            var uploadDiv = "<div class='uploadDiv'><input name='file[]' type='file' id='file'/></div>" +
+                "Caption: <input type='text' class='form-control'  name='caption["+count+"]'/><br>";
+            $("#addingImages").append(uploadDiv);
+        });
+
+    </script>
+    <!--{include "footer.tpl"}-->
+
+</div>
+</body>
+</html>
